@@ -1,0 +1,98 @@
+.team-profile {
+  max-width: 1250px;
+  margin: 70px auto;
+  padding: 0 30px;
+}
+.team-profile .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 30px;
+}
+.team-profile .title h2 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.team-profile .title p {
+  font-size: 1.125rem;
+  color: rgb(93, 93, 93);
+  font-weight: 500;
+  margin: 0;
+}
+.team-profile .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.team-profile .cards-wrapper .card-container {
+  width: calc((100% - 90px) / 4);
+  min-width: calc((100% - 90px) / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.team-profile .cards-wrapper .card-container .profile-image img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-profile .cards-wrapper .card-container .profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.team-profile .cards-wrapper .card-container .profile-content .name {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.team-profile .cards-wrapper .card-container .profile-content .position {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(93, 93, 93);
+}
+.team-profile .cards-wrapper .card-container .profile-content .detail {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.team-profile .cards-wrapper .card-container .profile-content .social-media {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0 0 0;
+}
+.team-profile
+  .cards-wrapper
+  .card-container
+  .profile-content
+  .social-media
+  img {
+  width: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .team-profile {
+    margin: 50px 0;
+    padding: 0 20px;
+  }
+  .team-profile .title {
+    margin: 0 0 25px;
+  }
+  .team-profile .cards-wrapper .card-container {
+    width: 100%;
+    min-width: 100%;
+  }
+  .team-profile .cards-wrapper .card-container .profile-image img {
+    width: 150px;
+    height: 150px;
+  }
+}

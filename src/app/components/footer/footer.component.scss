@@ -1,0 +1,135 @@
+.gallery-footer-container {
+  position: relative;
+  background-color: #4caf50;
+  margin: auto;
+  max-width: 1500px;
+}
+.gallery-footer-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: url("https://assets.hyperinvento.com/hyperinventory_admin/dynamic-home-assets/common/bg-pattern-img.webp");
+  background-repeat: repeat-x;
+}
+.gallery-footer-container .gallery-footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 100px 50px;
+  margin: auto;
+  max-width: 1500px;
+}
+.gallery-footer-container .gallery-footer-col h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+.gallery-footer-container .gallery-footer-col h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+.gallery-footer-container .gallery-footer-col p {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+.gallery-footer-container .gallery-footer-col ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.gallery-footer-container .gallery-footer-col ul li:not(:last-child) {
+  margin: 0 0 20px;
+}
+.gallery-footer-container .gallery-footer-col ul li a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.gallery-footer-container .gallery-footer-col ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.gallery-footer-container .gallery-footer-col .social-icon-container {
+  margin: 40px 0;
+}
+.gallery-footer-container .gallery-footer-col .social-icon-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.gallery-footer-container .gallery-footer-col .social-icon-container ul li {
+  margin: 0;
+}
+.gallery-footer-container
+  .gallery-footer-col
+  .social-icon-container
+  ul
+  li
+  a
+  img {
+  width: 50px;
+  height: 50px;
+}
+.gallery-footer-container .footer-bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  margin: auto;
+  max-width: 1500px;
+}
+.gallery-footer-container .footer-bottom-content p {
+  font-size: 14px;
+  color: #ffffff;
+}
+.gallery-footer-container .footer-bottom-content ul {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.gallery-footer-container .footer-bottom-content ul li img {
+  width: 50px;
+  height: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .gallery-footer-container .gallery-footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 120px 30px 0;
+  }
+  .gallery-footer-container .gallery-footer-col h2 {
+    font-size: 14px;
+  }
+  .gallery-footer-container .gallery-footer-col h2,
+  .gallery-footer-container .gallery-footer-col p {
+    text-align: start;
+  }
+  .gallery-footer-container .footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 40px;
+    align-items: flex-start;
+  }
+  .gallery-footer-container .gallery-footer-col .social-icon-container ul {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .gallery-footer-container .gallery-footer-col .social-icon-container {
+    margin: 20px 0 40px;
+  }
+  .gallery-footer-col:nth-child(2) {
+    order: 3;
+  }
+}

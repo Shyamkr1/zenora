@@ -1,0 +1,23 @@
+<header>
+  <nav>
+    <div class="logo">MentalHealthMatters</div>
+    <div class="hamburger" (click)="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" [class.active]="isMobileMenuOpen">
+      <li *ngFor="let item of navigationItems">
+        <a *ngIf="!item.children" [routerLink]="item.path">{{ item.label }}</a>
+        <div *ngIf="item.children" class="dropdown">
+          <a (click)="toggleSubMenu($event)">{{ item.label }}</a>
+          <ul class="sub-menu">
+            <li *ngFor="let child of item.children">
+              <a [routerLink]="child.path">{{ child.label }}</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>

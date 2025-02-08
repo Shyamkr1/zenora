@@ -1,0 +1,24 @@
+<section>
+  <div class="testimonial-users editable">
+    <div class="title">
+      <h2 class="deletable">{{ title }}</h2>
+      <p class="deletable">{{ subtitle }}</p>
+    </div>
+    <div class="cards-wrapper">
+      <div
+        *ngFor="let user of testimonialData"
+        class="card-container deletable"
+      >
+        <div class="description deletable">
+          <img class="deletable" [src]="user.quoteImg" />
+          <p class="deletable">{{ user.quote }}</p>
+        </div>
+        <div class="profile deletable">
+          <img class="deletable" [src]="user.profileImg" />
+          <p class="name deletable">{{ user.name }}</p>
+          <p class="position deletable">{{ user.position }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

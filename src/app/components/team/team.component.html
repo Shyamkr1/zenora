@@ -1,0 +1,65 @@
+<section>
+  <div class="team-profile editable">
+    <div class="title deletable">
+      <h2 class="deletable">Meet Our Team</h2>
+      <p class="deletable">
+        We are a group of professionals dedicated to their work
+      </p>
+    </div>
+    <div class="cards-wrapper deletable">
+      <!-- Loop through the team members and display their data dynamically -->
+      <div *ngFor="let member of teamMembers" class="card-container deletable">
+        <div class="profile-image deletable">
+          <img class="deletable" [src]="member.imageUrl" />
+        </div>
+        <div class="profile-content deletable">
+          <p class="name deletable">{{ member.name }}</p>
+          <p class="position deletable">{{ member.position }}</p>
+          <p class="detail deletable">{{ member.detail }}</p>
+          <div class="social-media deletable">
+            <a
+              class="deletable"
+              [href]="member.socialLinks.facebook"
+              target="_blank"
+            >
+              <img
+                class="editable"
+                src="https://assets.hyperinvento.com/hyperinventory_admin/dynamic-home-assets/single-brand-themes/images/facebook-icon.svg"
+              />
+            </a>
+            <a
+              class="deletable"
+              [href]="member.socialLinks.twitter"
+              target="_blank"
+            >
+              <img
+                class="deletable"
+                src="https://assets.hyperinvento.com/hyperinventory_admin/dynamic-home-assets/single-brand-themes/images/twitter-icon.svg"
+              />
+            </a>
+            <a
+              class="deletable"
+              [href]="member.socialLinks.instagram"
+              target="_blank"
+            >
+              <img
+                class="deletable"
+                src="https://assets.hyperinvento.com/hyperinventory_admin/dynamic-home-assets/single-brand-themes/images/instagram-icon.svg"
+              />
+            </a>
+            <a
+              class="deletable"
+              [href]="member.socialLinks.linkedin"
+              target="_blank"
+            >
+              <img
+                class="deletable"
+                src="https://assets.hyperinvento.com/hyperinventory_admin/dynamic-home-assets/single-brand-themes/images/linkedin-icon.svg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

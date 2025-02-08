@@ -1,0 +1,48 @@
+<section>
+  <div class="gallery-footer-container editable">
+    <div class="gallery-footer-content">
+      <!-- Company Section -->
+      <div class="gallery-footer-col deletable">
+        <h1 class="deletable">{{ footerData.company }}</h1>
+        <ul class="deletable">
+          <li class="deletable" *ngFor="let link of footerData.companyLinks">
+            <a>{{ link.text }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Join Us Section -->
+      <div class="gallery-footer-col deletable">
+        <h2 class="deletable">{{ footerData.joinMessage }}</h2>
+        <p class="deletable">{{ footerData.joinDescription }}</p>
+        <div class="social-icon-container deletable">
+          <ul class="deletable">
+            <li class="deletable" *ngFor="let social of footerData.socialLinks">
+              <a><img [src]="social.img" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Help Section -->
+      <div class="gallery-footer-col deletable">
+        <h1 class="deletable">Help</h1>
+        <ul>
+          <li class="deletable" *ngFor="let link of footerData.helpLinks">
+            <a>{{ link.text }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Content -->
+    <div class="footer-bottom-content deletable">
+      <ul class="available-for-payment-list deletable">
+        <li class="deletable" *ngFor="let payment of footerData.paymentMethods">
+          <img [src]="payment.img" />
+        </li>
+      </ul>
+      <p class="deletable">{{ footerData.copyright }}</p>
+    </div>
+  </div>
+</section>
